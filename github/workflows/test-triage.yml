@@ -1,20 +1,22 @@
-name: Test AI Triage
+name: AI Auto Triage Test
 
 on:
   workflow_dispatch:
 
 jobs:
-  triage-test:
 
-    runs-on: ubuntu-latest
+  triage-job:
+
+    runs-on: self-hosted
 
     steps:
-      - name: Checkout Repo
+
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Run AI Triage Action
+      - name: Upload Failure Artifact To Triage Service
         uses: ./.github/actions/triage-upload
 
         with:
           failure_file: failures/fail1.json
-          triage_url: http://host.docker.internal:8000
+          triage_url: http://127.0.0.1:8000
