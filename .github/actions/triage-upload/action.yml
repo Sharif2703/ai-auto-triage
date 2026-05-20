@@ -16,14 +16,19 @@ runs:
 
   steps:
     - name: Upload failure artifact
-      shell: bash
+      shell: powershell
+
       run: |
-        echo "Uploading failure artifact..."
 
-        response=$(curl -s -X POST \
-          -H "Content-Type: application/json" \
-          --data @"${{ inputs.failure_file }}" \
-          "${{ inputs.triage_url }}/triage")
+        Write-Host "Uploading failure artifact..."
 
-        echo "Triage Response:"
-        echo "$response"
+        $json = Get-Content "${{ inputs.failure_file }}" -Raw
+
+        $response = Invoke-RestMethod `
+          -Uri "${{ inputs.triage_url }}/triage" `
+          -Method Post `
+          -Body $json `
+          -ContentType "application/json"
+
+        Write-Host "Triage Response:"
+        $response | ConvertTo-Json
