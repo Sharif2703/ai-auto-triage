@@ -1,0 +1,11 @@
+{
+  "test_name": "test_api",
+  "suite": "api_suite",
+  "history": ["PASS", "FAIL"],
+  "exception_type": "APIException",
+  "exception_message": "Internal server error",
+  "stack_trace": "APIException at request layer",
+  "logs_tail": "request failed",
+  "http_errors": "500 Internal Server Error",
+  "dom_snippet": "None"
+}

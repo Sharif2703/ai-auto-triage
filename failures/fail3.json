@@ -1,0 +1,11 @@
+{
+  "test_name": "test_validation",
+  "suite": "validation_suite",
+  "history": ["FAIL"],
+  "exception_type": "AssertionError",
+  "exception_message": "Expected true but got false",
+  "stack_trace": "AssertionError at validation step",
+  "logs_tail": "assert condition failed",
+  "http_errors": "None",
+  "dom_snippet": "None"
+}

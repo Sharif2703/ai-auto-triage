@@ -1,0 +1,14 @@
+{
+    "category": "TIMEOUT_FAILURE",
+    "root_cause": "Operation exceeded allowed timeout",
+    "owner": "Infra or Automation Team",
+    "confidence": "MEDIUM",
+    "detected_patterns": [
+        "TIMEOUT_DETECTED"
+    ],
+    "history": [
+        "FAIL"
+    ],
+    "flaky_test": false,
+    "flaky_score": 0
+}

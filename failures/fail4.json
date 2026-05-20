@@ -1,0 +1,11 @@
+{
+  "test_name": "test_timeout",
+  "suite": "infra_suite",
+  "history": ["FAIL"],
+  "exception_type": "TimeoutException",
+  "exception_message": "Operation timeout",
+  "stack_trace": "TimeoutException at connection layer",
+  "logs_tail": "request timeout after 60 seconds",
+  "http_errors": "None",
+  "dom_snippet": "None"
+}

@@ -1,0 +1,11 @@
+{
+  "test_name": "test_login",
+  "suite": "auth_suite",
+  "history": ["PASS", "FAIL", "PASS", "FAIL"],
+  "exception_type": "TimeoutException",
+  "exception_message": "Element not found: login-button",
+  "stack_trace": "TimeoutException at login page line 45",
+  "logs_tail": "locator failed after 30 seconds",
+  "http_errors": "None",
+  "dom_snippet": "<button id='signin-btn'>"
+}

@@ -1,0 +1,14 @@
+{
+    "category": "ASSERTION_FAILURE",
+    "root_cause": "Validation/assertion failed during test",
+    "owner": "Test Automation Team",
+    "confidence": "MEDIUM",
+    "detected_patterns": [
+        "ASSERTION_FAILURE"
+    ],
+    "history": [
+        "FAIL"
+    ],
+    "flaky_test": false,
+    "flaky_score": 0
+}

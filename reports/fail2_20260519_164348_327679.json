@@ -1,0 +1,15 @@
+{
+    "category": "API_FAILURE",
+    "root_cause": "Backend/API issue detected: 500 Internal Server Error",
+    "owner": "Backend API Team",
+    "confidence": "HIGH",
+    "detected_patterns": [
+        "HTTP_ERROR"
+    ],
+    "history": [
+        "PASS",
+        "FAIL"
+    ],
+    "flaky_test": false,
+    "flaky_score": 0
+}

@@ -1,0 +1,29 @@
+name: "AI Auto Triage Upload"
+
+description: "Uploads failure artifacts to AI triage service"
+
+inputs:
+  failure_file:
+    description: "Path to failure JSON file"
+    required: true
+
+  triage_url:
+    description: "Triage service URL"
+    required: true
+
+runs:
+  using: "composite"
+
+  steps:
+    - name: Upload failure artifact
+      shell: bash
+      run: |
+        echo "Uploading failure artifact..."
+
+        response=$(curl -s -X POST \
+          -H "Content-Type: application/json" \
+          --data @"${{ inputs.failure_file }}" \
+          "${{ inputs.triage_url }}/triage")
+
+        echo "Triage Response:"
+        echo "$response"

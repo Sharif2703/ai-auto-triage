@@ -1,0 +1,17 @@
+{
+    "category": "FLAKY_TEST",
+    "root_cause": "Intermittent test behavior detected",
+    "owner": "Automation QA Team",
+    "confidence": "MEDIUM",
+    "detected_patterns": [
+        "LOCATOR_ISSUE"
+    ],
+    "history": [
+        "PASS",
+        "FAIL",
+        "PASS",
+        "FAIL"
+    ],
+    "flaky_test": true,
+    "flaky_score": 50
+}
